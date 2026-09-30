@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "protocolVersion",
+    "requestId",
+    "success",
+    "diagnostics",
+    "result"
+  ],
+  "properties": {
+    "protocolVersion": {
+      "const": 1
+    },
+    "requestId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "success": {
+      "type": "boolean"
+    },
+    "diagnostics": {
+      "type": "array"
+    },
+    "result": {}
+  }
+}
