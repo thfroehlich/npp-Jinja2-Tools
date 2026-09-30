@@ -1,0 +1,2 @@
+class ProtocolError(ValueError):
+    pass

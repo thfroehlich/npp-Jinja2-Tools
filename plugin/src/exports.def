@@ -1,0 +1,8 @@
+LIBRARY Jinja2Tools
+EXPORTS
+ setInfo
+ getName
+ getFuncsArray
+ beNotified
+ messageProc
+ isUnicode
