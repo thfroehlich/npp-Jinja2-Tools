@@ -2,6 +2,7 @@
 
 Jinja2 Tools is a 64-bit Notepad++ plugin for formatting, validating and statically analyzing Jinja2 templates. A bundled Python helper performs Jinja2 parsing, mixed HTML/Jinja formatting and analysis.
 
+
 ## Features
 
 - Format a complete document or current selection.
@@ -12,9 +13,11 @@ Jinja2 Tools is a 64-bit Notepad++ plugin for formatting, validating and statica
 - Apply the built-in Notepad++ HTML language after successful formatting.
 - Keep formatting changes in one undo action.
 
+
 ## Commands
 
 `Plugins > Jinja2 Tools` contains: Format Document, Format Selection, Check Syntax, Analyze Template, Clear Diagnostics and About.
+
 
 ## Quick build
 
@@ -25,6 +28,15 @@ powershell -ExecutionPolicy Bypass -File scripts\build.ps1
 
 Use the Visual Studio generator installed on the build machine in `CMakePresets.json`, for example `Visual Studio 18 2026`.
 
+## Automated releases
+Push a semantic version tag to build and publish a release ZIP:
+```powershell
+git tag v0.2.0
+git push origin v0.2.0
+```
+See `docs/github-release.md`.
+
+
 ## Installation
 
 ```text
@@ -34,6 +46,7 @@ Use the Visual Studio generator installed on the build machine in `CMakePresets.
 ```
 
 Fully exit and restart Notepad++ after replacing files.
+
 
 ## Documentation
 
